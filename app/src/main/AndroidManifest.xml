@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cl.aquilotienes.test_publicidad_android">
 
-    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
+        <activity android:name=".SecondActivity"></activity>
+        <!--
+         Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
 
             Este id: es el primero del sitio admob
-         -->
+        -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -26,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

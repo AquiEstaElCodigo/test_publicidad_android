@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- Este es el segundo que da admob
-
-        ver video: https://www.youtube.com/watch?v=K00CfxVxJD8
-    -->
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+    <fragment
+        android:id="@+id/fragment_ads"
+        android:name="cl.aquilotienes.test_publicidad_android.AdsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        ads:adSize="BANNER"
-
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-    </com.google.android.gms.ads.AdView>
+        tools:layout="@layout/fragment_ads" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:textSize="@dimen/tamanio_texto"/>
+        android:textSize="@dimen/tamanio_texto" />
+
+    <Button
+        android:id="@+id/btn_segunda_actividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_segunda_actividad" />
+
 
 </LinearLayout>
