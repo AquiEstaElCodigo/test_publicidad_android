@@ -25,7 +25,7 @@ public class AdsFragment extends Fragment {
     }
 
     public AdsFragment(Context context) {
-        // Required empty public constructor
+        
         MobileAds.initialize(context);
     }
 

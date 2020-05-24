@@ -8,9 +8,8 @@
     tools:context=".AdsFragment">
 
     <!-- Este es el segundo que da admob
-
-    ver video: https://www.youtube.com/watch?v=K00CfxVxJD8
--->
+        ver video: https://www.youtube.com/watch?v=K00CfxVxJD8
+    -->
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
